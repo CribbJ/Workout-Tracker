@@ -16,9 +16,9 @@ env_file_mapping = {
 env_file = env_file_mapping.get(DJANGO_ENV, BASE_DIR / ".envs" / ".env")
 environ.Env.read_env(env_file)
 
-DEBUG = env.bool("DEBUG", default=True)
-# SECRET_KEY = env("SECRET_KEY") TODO: debug to see why this doesn't work
-SECRET_KEY = "SECRET_KEY=django-insecure-c@(c*7s!q0qt+p)o)03*fphi(%7zp*%@+6bu%4t&$b7jnvu-ev"
+DEBUG = env.bool("DEBUG", default=False)
+SECRET_KEY = env("SECRET_KEY") # TODO: debug to see why this doesn't work
+# SECRET_KEY = "SECRET_KEY=django-insecure-c@(c*7s!q0qt+p)o)03*fphi(%7zp*%@+6bu%4t&$b7jnvu-ev"
 ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", default=["127.0.0.1", "localhost"])
 
 
