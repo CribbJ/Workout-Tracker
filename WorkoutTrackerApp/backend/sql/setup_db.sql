@@ -1,0 +1,3 @@
+CREATE DATABASE dev_workout_tracker_db;
+CREATE DATABASE test_workout_tracker_db;
+CREATE DATABASE prod_workout_tracker_db;
