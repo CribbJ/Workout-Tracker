@@ -1,4 +1,5 @@
 #!/bin/bash
+# To migrate all environments (dev, test, prod):
 
 # Run migrations for dev
 echo "Migrating dev environment..."
