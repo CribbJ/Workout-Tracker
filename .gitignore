@@ -28,7 +28,7 @@ static/
 
 # PostgreSQL
 *.db
-*/backend/sql/users/
+*/backend/sql/*
 
 # VS Code
 .vscode/
